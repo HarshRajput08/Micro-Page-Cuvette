@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color:  #6F6AF7;
+
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 20px 20px;
+    width: 100%;
+}
+.nav-elements{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+.logo h1{
+    color: white;
+    font-family: 'Delius Unicase', sans-serif;
+}
+.nav-elements li:hover {
+    text-decoration: underline;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+}
+.search-container button {
+    background-color: transparent;
+    border: none;
+    margin-left: -30px;
+    cursor: pointer;
+}
+.search-container input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.three-menu i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.flexone{
+    min-height: 500px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.flexone .image img{
+    border-radius: 10px;
+    width: 450px;
+    height: 350px;
+    margin-left: 25px;
+}
+.flexone .description{
+    background-color:#E5D8FF;
+    width: 970px;
+    height: 350px;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 25px;
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.stat-box {
+    background-color: #929DFF;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 22%;
+    font-size: 18px;
+    color: white;
+    box-shadow: 5px 5px lightskyblue;
+}
+
+.stat-box:nth-child(2) {
+    background-color: #734CF2;
+}
+
+.stat-box:nth-child(3) {
+    background-color: #D288FF;
+}
+
+.stat-box:nth-child(4) {
+    background-color: #000;
+}
+.support-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; 
+    height: 60px;
+    background: url('support\ logo.png') no-repeat center center; 
+    background-size: cover; 
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+}
+
+.support-button:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+/*This is the third part....*/
+
+.container{
+    display: flex;
+    background-color: #483EFF;
+    width: 1470px;
+    height: 350px;
+    padding-top: 25px;
+    padding-left: 25px;
+    border-radius: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    opacity: 0px;
+
+
+}
+.sidebar{
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-btn{
+    padding: 15px;
+    margin-bottom: 15px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px; 
+    text-align: center;
+
+}
+.nav-btn.active{
+    background-color: #BCE0F6;
+
+    color: black;
+};
+
+.content{
+    display: flex;
+    flex-grow: 1;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+}
+.info {
+    background-color: white;
+    padding: 44px;
+    width:1165px ;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1d3557;
+}
+
+.info p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.next-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 6px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 62rem;
+}
+
+.next-btn:hover {
+    background-color: #333;
+}
+.social-media {
+    position: fixed;
+    top: 50%; /* Adjust the position from the top as needed */
+    right: 10px;
+    display: flex;
+    flex-direction: column; /* Make the icons vertical */
+    align-items: center;
+    padding-right: 10px; /* Add padding to move the buttons slightly inward */
+    z-index: 1000;
+    transform: translateY(-50%);
+}
+
+.social-icon {
+    margin: 10px 0; /* Spacing between icons */
+    font-size: 24px; /* Adjust icon size */
+    text-decoration: none;
+    color: #333; /* Icon color */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
